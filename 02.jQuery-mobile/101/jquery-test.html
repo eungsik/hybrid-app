@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Page Structure</title>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+</head>
+<body>
+<div data-role="page" id="home">
+    <div data-role="header" data-theme="a">
+        <h1>Header입니다.</h1>
+    </div>
+    <div data-role="content">
+        <p>Contents 입니다.</p>
+        <a href="#contact" data-role="button" data-theme="b">클릭하면 contact 로 이동합니다.</a>
+        <a href="#about" data-role="button" data-theme="c">클릭하면 about 로 이동합니다.</a>
+
+    </div>
+    <div data-role="footer">
+        <h2>Footer입니다.</h2>
+    </div>
+</div>
+<div data-role="page" id="about">
+    <div data-role="header">
+        <h1>About Us.</h1>
+    </div>
+    <div data-role="content">
+        <p>About 입니다.</p>
+        <a href="#home">클릭하면 home 로 이동합니다.</a>
+    </div>
+    <div data-role="footer">
+        <h2>Footer입니다.</h2>
+    </div>
+</div>
+<div data-role="page" id="contact">
+    <div data-role="header">
+        <h1>Contact.</h1>
+    </div>
+    <div data-role="content">
+        <p>Contact 입니다.</p>
+        <a href="#home" data-direction="reverse">클릭하면 home 로 이동합니다.</a>
+    </div>
+    <div data-role="footer">
+        <h2>Footer입니다.</h2>
+    </div>
+</div>
+
+</body>
+</html>
